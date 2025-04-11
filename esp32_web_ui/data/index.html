@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پروژه اینترنت اشیا</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="canvas-animation"></canvas>
+  
+  <div class="container">
+    <header>
+      <h1 class="title">پروژه اینترنت اشیا</h1>
+      <p class="subtitle">کنترل هوشمند LED ها و مانیتورینگ دما و رطوبت</p>
+    </header>
+    
+    <section class="control-panel">
+      <div class="led-buttons">
+        <button class="control-button led-btn button-off" data-led="0">LED 1</button>
+        <button class="control-button led-btn button-off" data-led="1">LED 2</button>
+        <button class="control-button led-btn button-off" data-led="2">LED 3</button>
+        <button class="control-button led-btn button-off" data-led="3">LED 4</button>
+        <button class="control-button led-btn button-off" data-led="4">LED 5</button>
+        <button class="control-button led-btn button-off" data-led="5">LED 6</button>
+        <button class="control-button led-btn button-off" data-led="6">LED 7</button>
+        <button class="control-button led-btn button-off" data-led="7">LED 8</button>
+      </div>
+      <div class="color-picker">
+        <label for="colorInput">انتخاب رنگ:</label>
+        <input type="color" id="colorInput" value="#ffffff">
+      </div>
+      <div class="temp-display">
+        <p id="temperature">دما: -- °C | رطوبت: -- %</p>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-text">Developed by Mhdi</p>
+    </footer>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
